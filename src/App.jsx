@@ -13,8 +13,8 @@ function App() {
   // console.log('Component Rendered');
 
   const getImages = async () => {
-    const userQuery = input.current.value;
-
+    const userQuery = encodeURIComponent(input.current.value);
+    console.log(userQuery);
     // console.log('function Calling');
     if (!userQuery.trim()) {
       alert('Please enter a valid query!');
