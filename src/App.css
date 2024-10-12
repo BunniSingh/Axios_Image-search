@@ -61,11 +61,22 @@ h1{
 
 
 .result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: 2rem;
   padding: 1rem;
 
   img{
     width: 100%;
     height: auto;
+  }
+}
+
+
+@media (max-width: 568px){
+  .input-box{
+    max-width: 100%;
   }
 }

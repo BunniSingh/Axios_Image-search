@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(95, 103, 253);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.image-container{
+    max-width: 30%;
+    min-width: 200px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.image{
+    width: 100%;
+    height: 300px;
+    a{
+        img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+}
+
+
+@media (max-width: 568px){
+    .image-container{
+        max-width: 100%;
+        min-width: unset;
+    }
+}
